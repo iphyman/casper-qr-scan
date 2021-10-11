@@ -1,0 +1,37 @@
+export interface BaseButtonProps {
+  type?: "button" | "submit" | "reset";
+  wide?: string;
+  full?: boolean;
+  large?: boolean;
+  minWidth?: string;
+  maxWidth?: string;
+  tall?: string;
+  minHeight?: string;
+  padding?: string;
+  margin?: string;
+  background?: string;
+  backColor?: string;
+  borderWidth?: string;
+  borderColor?: string;
+  rounded?: string;
+  squared?: boolean;
+  display?: string;
+  alignItems?: string;
+  justifyContent?: string;
+  size?: string;
+  textAlign?: string;
+  lineHeight?: string | number;
+  color?: string;
+  uppercase?: boolean;
+  capitalize?: boolean;
+  disabled?: boolean;
+  hoverTextColor?: string;
+  hoverBackColor?: string;
+  hoverBorderColor?: string;
+  boxShadow?: string;
+  overflow?: string;
+  whiteSpace?: string;
+  flex?: string;
+  opacity?: string;
+  weight?: 400 | 500 | 600 | 700 | 800 | 900;
+}
