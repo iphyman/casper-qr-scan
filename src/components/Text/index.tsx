@@ -5,4 +5,5 @@ export const Title = styled.h3`
   line-height: 1.5;
   color: ${({ theme }) => theme.text300};
   font-weight: 700;
+  margin-top: 10px;
 `;

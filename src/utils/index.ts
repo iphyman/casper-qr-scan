@@ -10,3 +10,7 @@ export function shortenPubkey(pubkey: string) {
   pubkey = pubkey.toUpperCase();
   return `${pubkey.substring(0, 5)}...${pubkey.substring(pubkey.length - 5)}`;
 }
+
+export function motesToCSPR(motes: number) {
+  return motes / 1000000000;
+}

@@ -106,6 +106,6 @@ export const DownloadButton = styled(BaseButton)`
   font-weight: 600;
 
   &:hover {
-    background-color: darken(0.2, #10d078);
+    background-color: ${darken(0.2, "#10d078")};
   }
 `;

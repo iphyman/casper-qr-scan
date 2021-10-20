@@ -18,3 +18,7 @@ export const updateisSignerConnected = createAction<{
 export const updateIsSignerLocked = createAction<{
   isSignerLocked: boolean;
 }>("app/updateSignerLockState");
+
+export const updateCSPRToUSDRate = createAction<{
+  CSPRToUSDRate: number;
+}>("app/updateCSPRToUSDRate");

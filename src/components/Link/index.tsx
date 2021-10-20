@@ -90,7 +90,7 @@ export const SubNavLinkGroup = styled.div`
   flex-direction: row;
   justify-content: space-between;
   justify-self: center;
-  margin: 20px 0px 30px;
+  margin: 20px 0px 10px;
   border-radius: 4px;
   background-color: ${({ theme }) => theme.bg100};
   border: 1px solid ${({ theme }) => theme.bg200};

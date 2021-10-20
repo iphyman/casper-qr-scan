@@ -116,14 +116,46 @@ export default function Navbar() {
 export function TransferNavbar() {
   return (
     <SubNavLinkGroup>
-      <SubNavLink to="/transfer/create">
+      <SubNavLink exact to="/transfer">
         <Trans>Create</Trans>
       </SubNavLink>
-      <SubNavLink to="/transfer/scan">
+      <SubNavLink exact to="/transfer/scan">
         <Trans>Scan</Trans>
       </SubNavLink>
-      <SubNavLink to="/transfer/payment">
-        <Trans>Send money</Trans>
+      <SubNavLink exact to="/transfer/deploy">
+        <Trans>Deploy</Trans>
+      </SubNavLink>
+    </SubNavLinkGroup>
+  );
+}
+
+export function DelegateNavbar() {
+  return (
+    <SubNavLinkGroup>
+      <SubNavLink exact to="/delegate">
+        <Trans>Create</Trans>
+      </SubNavLink>
+      <SubNavLink exact to="/delegate/scan">
+        <Trans>Scan</Trans>
+      </SubNavLink>
+      <SubNavLink exact to="/delegate/deploy">
+        <Trans>Deploy</Trans>
+      </SubNavLink>
+    </SubNavLinkGroup>
+  );
+}
+
+export function UndelegateNavbar() {
+  return (
+    <SubNavLinkGroup>
+      <SubNavLink exact to="/undelegate">
+        <Trans>Create</Trans>
+      </SubNavLink>
+      <SubNavLink exact to="/undelegate/scan">
+        <Trans>Scan</Trans>
+      </SubNavLink>
+      <SubNavLink exact to="/undelegate/deploy">
+        <Trans>Deploy</Trans>
       </SubNavLink>
     </SubNavLinkGroup>
   );

@@ -16,8 +16,18 @@ export default class Routes extends PureComponent {
             path="/transfer/:operation?"
             component={Transfer}
           />
-          <Route strict exact path="/delegate" component={Delegate} />
-          <Route strict exact path="/undelegate" component={Undelegate} />
+          <Route
+            strict
+            exact
+            path="/delegate/:operation?"
+            component={Delegate}
+          />
+          <Route
+            strict
+            exact
+            path="/undelegate/:operation?"
+            component={Undelegate}
+          />
         </Switch>
       </>
     );

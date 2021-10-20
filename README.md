@@ -20,7 +20,7 @@ Light mode
 
 ## Quick Links
 
-- [View live Demo]()
+- [View live Demo](https://casper-qr-scan.netlify.app/)
 
 ## How It Works
 

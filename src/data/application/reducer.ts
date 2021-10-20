@@ -4,6 +4,7 @@ import {
   updateAppNotificationState,
   updateisSignerConnected,
   updateIsSignerLocked,
+  updateCSPRToUSDRate,
 } from "./actions";
 
 interface ApplicationState {
@@ -14,6 +15,7 @@ interface ApplicationState {
   appNotificationState: boolean;
   isSignerConnected: boolean;
   isSignerLocked: boolean;
+  CSPRToUSDRate: number;
 }
 
 const initialState: ApplicationState = {
@@ -21,6 +23,7 @@ const initialState: ApplicationState = {
   appNotificationState: false,
   isSignerConnected: false,
   isSignerLocked: true,
+  CSPRToUSDRate: 0.108,
 };
 
 export default createReducer(initialState, (builder) => {
@@ -36,5 +39,8 @@ export default createReducer(initialState, (builder) => {
     })
     .addCase(updateIsSignerLocked, (state, action) => {
       state.isSignerLocked = action.payload.isSignerLocked;
+    })
+    .addCase(updateCSPRToUSDRate, (state, action) => {
+      state.CSPRToUSDRate = action.payload.CSPRToUSDRate;
     });
 });

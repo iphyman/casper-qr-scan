@@ -66,6 +66,7 @@ const PageContent = styled.div<{ margin?: string; maxWidth?: string }>`
   background: ${({ theme }) => theme.bg100};
   box-shadow: rgba(0, 0, 0, 0.04) -1px 1px 9px 0px,
     rgba(128, 163, 182, 0.2) 1px 1px 1px 0px;
+  transition: background 0.25s ease-in-out, height 0.25s ease-in-out;
 `;
 
 interface LayoutsProps {

@@ -8,6 +8,7 @@ import {
   updateTransactionAmount,
   updateTransactionId,
   updateReceipientPubKey,
+  updateUserBalance,
 } from "./actions";
 
 interface UserState {
@@ -16,8 +17,9 @@ interface UserState {
   userPubKey: string;
   validatorPubKey: string;
   transactionAmount: string;
-  transactionId: string;
+  transactionId: string | number;
   receipientPubKey: string;
+  userBalance: string;
 }
 
 const initialState: UserState = {
@@ -26,8 +28,9 @@ const initialState: UserState = {
   userPubKey: "",
   validatorPubKey: "",
   transactionAmount: "",
-  transactionId: "",
+  transactionId: new Date().getTime(),
   receipientPubKey: "",
+  userBalance: "0.00",
 };
 
 export default createReducer(initialState, (builder) => {
@@ -52,5 +55,8 @@ export default createReducer(initialState, (builder) => {
     })
     .addCase(updateReceipientPubKey, (state, action) => {
       state.receipientPubKey = action.payload.receipientPubKey;
+    })
+    .addCase(updateUserBalance, (state, action) => {
+      state.userBalance = action.payload.userBalance;
     });
 });

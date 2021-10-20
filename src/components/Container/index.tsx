@@ -9,6 +9,7 @@ export interface IContainerFluid {
   mr?: string;
   ml?: string;
   p?: string;
+  bg?: boolean;
 }
 
 export const ContainerFluid = styled.div<IContainerFluid>`
@@ -20,6 +21,7 @@ export const ContainerFluid = styled.div<IContainerFluid>`
   margin-right: ${({ mr }) => mr ?? "auto"};
   margin-left: ${({ ml }) => ml ?? "auto"};
   padding: ${({ p }) => p};
+  background: ${({ bg, theme }) => (bg ? theme.bg100 : null)};
 `;
 
 export interface IContainer {
